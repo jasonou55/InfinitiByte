@@ -1,8 +1,16 @@
 package com.jarvis.infinitibyte.request;
 
+import javax.validation.Valid;
+import javax.validation.constraints.NotBlank;
+
 public class OpenAiMessage {
 
+    @Valid
+    @NotBlank
     private String role;
+
+    @Valid
+    @NotBlank
     private String content;
 
     public String getRole() {
